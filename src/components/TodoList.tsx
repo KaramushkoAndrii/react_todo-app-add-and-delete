@@ -59,7 +59,10 @@ export const TodoList: React.FC<Props> = ({
 
       {tempTodo && (
         <div data-cy="Todo" className="todo">
-          <label className="todo__status-label">
+          <label
+            className="todo__status-label"
+            aria-label="label-has-associated-control"
+          >
             <input
               data-cy="TodoStatus"
               type="checkbox"
